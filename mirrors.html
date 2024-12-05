@@ -14,6 +14,80 @@
   <link rel="stylesheet" href="css/winui-icons.min.css" />
   <link rel="stylesheet" type="text/css" href="css/app-config.css" />
   <link rel="stylesheet" type="text/css" href="css/windows-ui.min.css" />
+  <style>
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    .text-3xl {
+      font-size: 1.875rem;
+    }
+    .font-bold {
+      font-weight: bold;
+    }
+    .mb-8 {
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+    }
+    .grid-cols-1 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .lg\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .gap-8 {
+      gap: 2rem;
+    }
+    .mt-4 {
+      margin-top: 1rem;
+    }
+    .card {
+      border: 1px solid #e2e8f0;
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+    .card-header {
+      padding: 1rem;
+      background-color: #f7fafc;
+    }
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-description {
+      margin-bottom: 1rem;
+    }
+    .button {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #4299e1;
+      color: white;
+      border-radius: 0.25rem;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #3182ce;
+    }
+    @media (min-width: 768px) {
+      .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (min-width: 1024px) {
+      .lg\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -71,69 +145,116 @@
       </nav>
     </aside>
     <main class="app-page-container has-padding">
-      <h1>Appearance</h1>
-      <p>The <span class="app-color-primary">Appearance</span> module exposes information about the user's appearance preferences,
-        <br> such as their preferred color scheme (light or dark).
-      </p>
-      <h2>Usage</h2>
-      <pre><code id="code_view_1"></code></pre>
-      <div class="app-hr"></div>
-      <h2>
-        <b>Methods</b>
-      </h2>
-      <h2>
-        <p class="app-code">getColorScheme()</p>
-      </h2>
-      <p>Indicates the current either system or user preferred color scheme.</p>
-      <pre><code id="code_view_2"></code></pre>
-      <h2>
-        <p class="app-code">setDarkScheme()</p>
-      </h2>
-      <p>Set's app to <i>dark</i> color scheme.</p>
-      <pre><code id="code_view_3"></code></pre>
-      <h2>
-        <p class="app-code">setLightScheme()</p>
-      </h2>
-      <p>Set's app to <i>light</i> color scheme.</p>
-      <pre><code id="code_view_4"></code></pre>
-      <h2>
-        <p class="app-code">setSystemScheme()</p>
-      </h2>
-      <p>Set's app to <i>system</i> color scheme.</p>
-      <pre><code id="code_view_5"></code></pre>
-      <br />
-      <br />
-    </main>
+      <h1>系统镜像</h1>
+      <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">Microsoft 官方 Win11</div>
+            </div>
+            <div class="card-content">
+              <div class="card-description">官方 Windows 11 下载渠道。</div>
+              <a href="https://www.microsoft.com/zh-cn/software-download/windows11" target="_blank" rel="noopener noreferrer" class="button mt-4">下载</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">Microsoft官方Win10</div>
+            </div>
+            <div class="card-content">
+              <div class="card-description">官方Windows 10下载渠道。</div>
+              <a href="https://www.microsoft.com/zh-cn/software-download/windows10" target="_blank" rel="noopener noreferrer" class="button mt-4">下载</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">MSDN I Tell You</div>
+            </div>
+            <div class="card-content">
+              <div class="card-description">多个版本的纯净Windows系统。</div>
+              <a href="https://msdn.itellyou.cn" target="_blank" rel="noopener noreferrer" class="button mt-4">访问</a>
+            </div>
+          </div>
+          <!-- Add more cards for other download sources -->
+        </div>
+      </div>
+      <h2>如何选择</h2>
+      <div style="border: 1px solid var(--color-ui-border-default);
+      display: flex;
+      border-radius: 6px;
+      background-color: var(--color-foreground-dark);
+      padding: 10px;
+      max-width: 800px;">
+        <p style="line-height: 1.75">
+        <ol>
+          <li>
+            <strong>硬件兼容性</strong>：
+            <ul>
+              <li>确保你的计算机硬件满足所选Windows版本的最低系统要求。例如，内存、处理器速度、硬盘空间等。</li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>使用需求</strong>：</p>
+            <ul>
+              <li><strong>家庭用户</strong>：通常选择Windows 10 Home或Windows 11 Home，这些版本提供了基本的功能和家庭用户所需的安全性更新。</li>
+              <li><strong>专业用户</strong>：如果你需要高级功能，如远程桌面、BitLocker加密和域连接等，可以选择Windows 10 Pro或Windows 11 Pro。</li>
+              <li><strong>企业用户</strong>：对于需要最高级别的安全性和控制的企业环境，可以选择Windows 10 Enterprise或Windows 11 Enterprise。</li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>预算</strong>：</p>
+            <ul>
+              <li>家庭版通常比专业版和企业版便宜，但功能也更有限。</li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>最新功能</strong>：</p>
+            <ul>
+              <li>如果你想要最新的功能和改进，可能会倾向于选择Windows 11，但要注意，较新的操作系统可能需要更强大的硬件支持。</li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>软件兼容性</strong>：</p>
+            <ul>
+              <li>确保你常用的软件和应用程序与所选的Windows版本兼容。</li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>支持周期</strong>：</p>
+            <ul>
+              <li>考虑操作系统的支持周期。例如，Windows 10的主流支持将持续到2025年，而Windows 11是微软的最新操作系统，将获得更长时间的支持。</li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>升级路径</strong>：</p>
+            <ul>
+              <li>如果你当前使用的是较旧的Windows版本，考虑是否有直接升级到最新版本的路径，或者是否需要全新安装。</li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>安全性</strong>：</p>
+            <ul>
+              <li>最新的Windows版本通常会包含最新的安全更新和补丁，这对于保护你的计算机免受威胁至关重要。</li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>个人偏好</strong>：</p>
+            <ul>
+              <li>有些人可能更喜欢某个版本的用户界面或特定功能，这也是选择时需要考虑的因素。</li>
+            </ul>
+          </li>
+          <li>
+            <p><strong>OEM、FPP和批量许可</strong>：</p>
+            <ul>
+              <li>了解不同的许可类型，如OEM（原始设备制造商）、FPP（全包装产品）和批量许可，它们可能影响你购买和使用Windows的方式。</li>
+            </ul>
+          </li>
+        </ol>
+        </p>
+    </main><br/><br/><br/><br/><br/><br/><br/>
   </div>
 </body>
 <script src="js/windows-ui.min.js"></script>
 <script src="./js/navbarItems.js"></script>
 <script>init_navbar_ul("Appearance", "subdir")</script>
-<script src="js/highlight.min.js"></script>
-<script>hljs.highlightAll()</script>
-<script>document.getElementById("code_view_1").innerHTML =
-hljs.highlightAuto(`
-const colorScheme = Appearance.getColorScheme();
-  if (colorScheme === "dark") {
-    Appearance.setLightScheme()
-    // Do action on dark color scheme
-  }
-`).value;
-document.getElementById("code_view_2").innerHTML =
-hljs.highlightAuto(`
-Appearance.getColorScheme(); // 'light'/'dark'
-`).value;
-document.getElementById("code_view_3").innerHTML =
-hljs.highlightAuto(`
-Appearance.setDarkScheme();
-`).value;
-document.getElementById("code_view_4").innerHTML =
-hljs.highlightAuto(`
-Appearance.setLightScheme();
-`).value;
-document.getElementById("code_view_5").innerHTML =
-hljs.highlightAuto(`
-Appearance.setSystemScheme();
-`).value;</script>
-
 </html>
