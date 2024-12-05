@@ -14,11 +14,6 @@ const navbar_items = [
     "href": "guide.html",
     "icon": "<i class='icons10-idea'></i>"
   },
-  {
-    "title": "系统激活",
-    "href": "activate.html",
-    "icon": "<i class='icons10-fingerprint'></i>"
-  },
 ];
 
 async function init_navbar_ul (active_item="Home", path="root") {
