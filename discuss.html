@@ -2,7 +2,7 @@
 <html lang="zhs">
 
 <head>
-  <title>开放代码 - 系统重装助手</title>
+  <title>心得交流 - 系统重装助手</title>
   <meta charset="UTF-8" />
   <meta name="theme-color" content="#EEE" />
   <meta name="mobile-web-app-capable" content="yes" />
@@ -23,7 +23,7 @@
         <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
         <div style="display: flex; justify-content: space-between; flex: 1;">
           <span class="app-navbar-name">系统重装助手</span>
-          <span class="app-navbar-name">开放代码</span>
+          <span class="app-navbar-name">心得交流</span>
         </div>
       </div>
       <nav class="app-navbar">
@@ -48,19 +48,19 @@
             </div>
             <div class="app-navbar-submenu-content" id="NavSubMenu">
               <li class="app-navbar-list-item">
-                <a exact="false" class="" href="./navbar.html">
+                <a exact="false" class="" href="info.html">
                   <i class="icons10-user"></i>
                   <span>作者信息</span>
                 </a>
               </li>
               <li class="app-navbar-list-item">
-                <a exact="false" class="" href="./navbarLink.html">
+                <a exact="false" class="" href="./discuss.html">
                   <i class="icons10-user-group"></i>
                   <span>心得交流</span>
                 </a>
               </li>
               <li class="app-navbar-list-item">
-                <a exact="false" class="" href="./navbarSubmenu.html">
+                <a exact="false" class="" href="opensource.html">
                   <i class="icons10-terminal"></i>
                   <span>开放代码</span>
                 </a>
@@ -71,32 +71,24 @@
       </nav>
     </aside>
     <div class="app-page-container has-padding">
-      <h1>NavBarSubMenu</h1>
-      <div style="width: 290px; background-color: var(--color-navbar-bg-default);">
-        <div class="app-navbar-submenu">
-          <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenuID">
-            <div>Title</div>
-          </div>
-          <div class="app-navbar-submenu-content" style="height: 0px;" id="NavSubMenuID">
-            <div class="app-navbar-wrap" style="height: 100px;">
-              <nav class="animate custom" style="position: relative;">
-                <ul class="app-navbar-list" style="padding: 0px; margin: 0px;">
-                  <li class="app-navbar-list-item">
-                    <a href="#/navbar" aria-current="page" class="active">
-                      <span>NavItem1</span>
-                    </a>
-                  </li>
-                  <li class="app-navbar-list-item">
-                    <a href="#/navbar">
-                      <i class="icons10-user"></i>
-                      <span>NavItem2</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
+      <h1>NavBarLink</h1>
+      <div class="app-navbar-wrap" style="position: relative; height: auto;">
+        <nav class="animate custom" style="position: relative;">
+          <ul class="app-navbar-list" style="padding: 0px; margin: 0px;">
+            <li class="app-navbar-list-item">
+              <a rel="noopener noreferrer" href="#" class="active">
+                <i class="icons10-add"></i>
+                <span>NavItem1</span>
+              </a>
+            </li>
+            <li class="app-navbar-list-item">
+              <a rel="noopener noreferrer" href="#">
+                <i class="icons10-user"></i>
+                <span>NavItem2</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <h2>Usage</h2>
       <pre><code id="code_view_1"></code></pre>
@@ -105,24 +97,17 @@
 </body>
 <script src="js/windows-ui.min.js"></script>
 <script src="./js/navbarItems.js"></script>
-<script>init_navbar_ul("NavBarSubMenu", "subdir")</script>
+<script>init_navbar_ul("NavBarLink", "subdir")</script>
 <script src="js/highlight.min.js"></script>
 <script>hljs.highlightAll()</script>
 <script>document.getElementById("code_view_1").innerHTML =
 hljs.highlightAuto(`
-<div class="app-navbar-submenu">
-  <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenuID">
-    <div>Title</div>
-  </div>
-  <div class="app-navbar-submenu-content" id="NavSubMenuID">
-    <li class="app-navbar-list-item">
-      <a href="./page.html" aria-current="page" class="unactive">
-        <span>NavItem</span>
-      </a>
-    </li>
-    <!-- More </li> Content -->
-  </div>
-</div>
+  <li class="app-navbar-list-item">
+    <a href="#" class="active">
+      <i class="icons10-user"></i>
+      <span>NavItem2</span>
+    </a>
+  </li>
 `).value;</script>
 
 </html>
