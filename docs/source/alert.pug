@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  include common/head.pug
+  include head
   <body>
   <div class="container-flex-row">
-    include common/navbar.pug
+    include navbar
 
     <main class="app-page-container has-padding">
       <h1>Alerts</h1>
@@ -74,7 +74,7 @@
     </main>
     <div>
   </body>
-  include common/footer.pug
+  include footer
   +importing('Alerts')
   script.
     document.getElementById("code_view_1").innerHTML =

@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="./docs/css/code-styles.css" />
-    <link rel="shortcut icon" href="./docs/public/favicon.ico" />
-    <link rel="stylesheet" href="dist/icons/winui-icons.min.css" />
-    <link rel="stylesheet" type="text/css" href="dist/config/app-config.css" />
-    <link rel="stylesheet" type="text/css" href="dist/windows-ui.min.css" />
-    <link rel="stylesheet" type="text/css" href="docs/css/home.css" />
+    <link rel="stylesheet" href="css/code-styles.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/winui-icons.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/app-config.css" />
+    <link rel="stylesheet" type="text/css" href="css/windows-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
   </head>
   <body>
     <div class="container-flex-row">
@@ -38,7 +38,7 @@
           </label>
           <li class="app-navbar-list-item">
             <a href="#" class="">
-              <img src="./docs/assets/mountain.jpg">
+              <img src="images/mountain.jpg">
               <span>Home</span>
             </a>
           </li>
@@ -145,5 +145,5 @@
     .then(response => response.json())
     .then(data => document.getElementById("current-version").innerHTML += data.version);
   </script>
-  <script src="./dist/windows-ui.min.js"></script>
+  <script src="js/windows-ui.min.js"></script>
 </html>

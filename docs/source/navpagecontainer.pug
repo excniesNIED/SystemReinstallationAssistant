@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  include common/head.pug
+  include head
   <body>
   <div class="container-flex-row">
     link(rel='stylesheet', href='./css/navpagecontainer.css')
-    include common/navbar.pug
+    include navbar
 
     <main class="app-page-container has-padding">
       <h1>PageContainer</h1>
@@ -22,7 +22,7 @@
     </main>
     </div>
   </body>
-  include common/footer.pug
+  include footer
   +importing('NavPageContainer')
   script.
     document.getElementById("code_view_1").innerHTML =
