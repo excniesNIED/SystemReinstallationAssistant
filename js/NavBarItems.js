@@ -25,7 +25,7 @@ async function init_navbar_ul (active_item="Home", path="root") {
 
   for (const navbar_item of navbar_items) {
     const is_active = navbar_item.title === active_item ? 'active' : init_navbar_top_ul(active_item);
-    const is_path = path === "root" ? "./docs/" : "./";
+    const is_path = path === "root" ? "./" : "./";
     navbar_item.icon = navbar_item.icon?.replace('./', is_path);
 
     let item;
