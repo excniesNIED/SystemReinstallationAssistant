@@ -1,112 +1,24 @@
 const navbar_items = [
   {
-    "title": "Utilities",
-    "href": "#"
-  },
-  {
-    "title": "Appearance",
+    "title": "系统镜像",
     "href": "appearance.html",
     "icon": "<i class='icons10-sun'></i>"
   },
   {
-    "title": "Classes",
+    "title": "装机工具",
     "href": "classes.html",
     "icon": "<i class='icons10-puzzle'></i>"
   },
   {
-    "title": "Colors",
+    "title": "重装教程",
     "href": "colors.html",
     "icon": "<i class='icons10-color-palette'></i>"
   },
   {
-    "title": "Icons",
+    "title": "系统激活",
     "href": "icons.html",
     "icon": "<i class='icons10-deathly-hallows'></i>"
   },
-  {
-    "title": "Components",
-    "href": "#"
-  },
-  {
-    "title": "Accordion",
-    "href": "accordion.html",
-    "icon": "<i class='icons10-down-squared'></i>"
-  },
-  {
-    "title": "Alerts",
-    "href": "alert.html",
-    "icon": "<i class='icons10-advertising'></i>"
-  },
-  {
-    "title": "Buttons",
-    "href": "buttons.html",
-    "icon": "<i class='icons10-controller'></i>"
-  },
-  {
-    "title": "CheckBox",
-    "href": "checkbox.html",
-    "icon": "<i class='icons10-checked-2'></i>"
-  },
-  {
-    "title": "CommandBar",
-    "href": "commandbar.html",
-    "icon": "<i class='icons10-terminal'></i>"
-  },
-  {
-    "title": "Dialogs",
-    "href": "dialogs.html",
-    "icon": "<i class='icons10-notification-image'></i>"
-  },
-  {
-    "title": "InputText",
-    "href": "inputtext.html",
-    "icon": "<i class='icons10-keyboard'></i>"
-  },
-  // {
-  //   "title": "Link",
-  //   "href": "links.html",
-  //   "icon": "<i class='icons10-link'></i>"
-  // },
-  {
-    "title": "Loaders",
-    "href": "loaders.html",
-    "icon": "<i class='icons10-tasks'></i>"
-  },
-  {
-    "title": "MenuBar",
-    "href": "menubar.html",
-    "icon": "<i class='icons10-align-left'></i>"
-  },
-  {
-    "title": "ProgressBar",
-    "href": "progressbars.html",
-    "icon": "<i class='icons10-bar-chart'></i>"
-  },
-  {
-    "title": "RadioButton",
-    "href": "radiobutton.html",
-    "icon": "<i class='icons10-checked'></i>"
-  },
-  {
-    "title": "Select",
-    "href": "select.html",
-    "icon": "<i class='icons10-database'></i>"
-  },
-  {
-    "title": "SliderBar",
-    "href": "sliderbar.html",
-    "icon": "<i class='icons10-arrow-right'></i>"
-  },
-  {
-    "title": "Switch",
-    "href": "switch.html",
-    "icon": "<i class='icons10-touch'></i>"
-  },
-  {
-    "title": "TableView",
-    "href": "tableview.html",
-    "icon": "<i class='icons10-grid-3'></i>"
-  }
 ];
 
 async function init_navbar_ul (active_item="Home", path="root") {
