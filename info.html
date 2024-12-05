@@ -14,6 +14,70 @@
   <link rel="stylesheet" href="css/winui-icons.min.css" />
   <link rel="stylesheet" type="text/css" href="css/app-config.css" />
   <link rel="stylesheet" type="text/css" href="css/windows-ui.min.css" />
+  <style>
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    .text-3xl {
+      font-size: 1.875rem;
+    }
+    .font-bold {
+      font-weight: bold;
+    }
+    .mb-8 {
+      margin-bottom: 2rem;
+    }
+    .text-2xl {
+      font-size: 1.5rem;
+    }
+    .font-semibold {
+      font-weight: 600;
+    }
+    .mb-4 {
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+    }
+    .grid-cols-1 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .lg\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .gap-8 {
+      gap: 2rem;
+    }
+    .rounded-full {
+      border-radius: 9999px;
+    }
+    .card {
+      border: 1px solid #e2e8f0;
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+    .card-header {
+      padding: 1rem;
+      text-align: center;
+    }
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+    }
+    .card-content {
+      padding: 1rem;
+      background-color: #f7fafc;
+    }
+    .card-description {
+      color: #4a5568;
+    }
+  </style>
 </head>
 
 <body>
@@ -61,7 +125,7 @@
                 </a>
               </li>
               <li class="app-navbar-list-item">
-                <a exact="false" class="" href="opensource.html">
+                <a exact="false" class="" href="https://github.com/excniesNIED/SystemReinstallationAssistant">
                   <i class="icons10-terminal"></i>
                   <span>开放代码</span>
                 </a>
@@ -72,76 +136,69 @@
       </nav>
     </aside>
     <div class="app-page-container has-padding">
-      <h1>NavBar</h1>
-      <div class="app-navbar-wrap" style="position: relative; height: auto;">
-        <nav class="animate custom" style="position: relative; z-index: 1;">
-          <div class="app-navbar-header">
-            <span class="app-navbar-toggler"></span>
-            <span class="app-navbar-name">React Windows UI</span>
+      <h1>作者信息</h1>
+      <div class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+          <h2 class="text-2xl font-semibold mb-4">我们的使命</h2>
+          <div style="border: 1px solid var(--color-ui-border-default);
+      display: flex;
+      border-radius: 6px;
+      background-color: lightcyan;
+      padding: 10px;
+      max-width: 800px;">
+            <p style="line-height: 1.75">本站使命是为用户提供最全面、最可靠的Windows系统重装指南和工具。我们致力于简化系统重装过程，
+              让每个人都能轻松完成系统重装，享受流畅的计算机使用体验。
+            </p>
+        </section>
+        <section class="mb-12">
+          <h2 class="text-2xl font-semibold mb-4">本站唯一网址</h2>
+          <p>
+            <a href="https://sra.hxcn.space" target="_blank">https://sra.hxcn.space</a>
+          </p>
+        </section>
+        <section class="mb-12">
+          <h2 class="text-2xl font-semibold mb-4">我们的团队</h2>
+          <div class="flex justify-center items-center">
+
+            <div class="card">
+              <div class="card-header">
+                <img src="./images/hc.jpg" alt="Team Member 1" width="200" height="200" class="rounded-full">
+                <div class="card-title">黄琛</div>
+              </div>
+              <div class="card-content">
+                <center>
+                <div class="card-description">计本2301 黄琛 202311000310</div></center>
+              </div>
+            </div>
           </div>
-          <ul class="app-navbar-list" style="padding: 0px;">
-            <li class="app-navbar-list-item">
-              <a rel="noopener noreferrer" href="#">
-                <i class="icons10-home"></i>
-                <span>Home</span>
-              </a>
-            </li>
-            <h1>Title</h1>
-            <div class="app-hr"></div>
-            <li class="app-navbar-list-item">
-              <a rel="noopener noreferrer" href="#" class="active">
-                <i class="icons10-add"></i>
-                <span>NavItem1</span>
-              </a>
-            </li>
-            <li class="app-navbar-list-item">
-              <a rel="noopener noreferrer" href="#">
-                <i class="icons10-user"></i>
-                <span>NavItem2</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        </section>
+        <section class="mb-12">
+          <h2 class="text-2xl font-semibold mb-4">开放源代码</h2>
+          <p>
+            本项目遵守MIT开源协议，在<a href="https://github.com/excniesNIED/SystemReinstallationAssistant" target="_blank">GitHub</a>上进行开源。
+          </p>
+        </section>
+        <section>
+          <h2 class="text-2xl font-semibold mb-4">联系我们</h2>
+            <h3>个人网站</h3><p>
+            <a href="https://hxcn.cnies.org"><img src="https://img.shields.io/badge/hxcn.cnies.org-%230DE4CD?style=for-the-badge&amp;logoColor=white" alt="Home Page"></a>
+            <a href="https://hs.cnies.org"><img src="https://img.shields.io/website?url=https%3A%2F%2Fhs.cnies.org&amp;up_message=hs.cnies.org&amp;up_color=%2358E2D8&amp;down_message=hs.cnies.org&amp;down_color=%230DE4CD&amp;style=for-the-badge&amp;label=Blog" alt="Website"></a>
+            <a href="https://enotes.cnies.org"><img src="https://img.shields.io/website?url=https%3A%2F%2Fenotes.cnies.org&amp;up_message=enotes.cnies.org&amp;up_color=%2314C3F3&amp;down_message=enotes.cnies.org&amp;down_color=%230DE4CD&amp;style=for-the-badge&amp;label=Notes" alt="Website"></a>
+          </p>
+          <h3>在下面平台关注我：</h3>
+          <p><a href="https://github.com/excniesNIED"><img src="https://img.shields.io/website?url=https%3A%2F%2Fgithub.com%2FexcniesNIED&amp;labelColor=grey&amp;up_message=excniesNIED&amp;style=for-the-badge&amp;label=Github&amp;logo=github" alt="Website"></a>
+            <a href="https://huggingface.co/excnies"><img src="https://img.shields.io/website?url=https%3A%2F%2Fhuggingface.co%2Fexcnies&amp;up_message=excnies&amp;style=for-the-badge&amp;label=HuggingFace&amp;logo=HuggingFace" alt="Website"></a>
+            <a href="https://space.bilibili.com/520945083"><img src="https://img.shields.io/website?url=https%3A%2F%2Fspace.bilibili.com%2F520945083&amp;up_message=%E8%90%91%E6%BE%88&amp;style=for-the-badge&amp;label=Bilibili&amp;logo=bilibili" alt="Website"></a>
+            <a href="mailto:hxcn@cnies.org"><img src="https://img.shields.io/website?url=https%3A%2F%2Fgithub.com%2FexcniesNIED&amp;up_message=hxcn%40cnies.org&amp;style=for-the-badge&amp;label=Mail&amp;logo=mail.ru" alt="Website"></a>
+          </p>
+        </section>
       </div>
-      <h2>Usage</h2>
-      <pre><code id="code_view_1"></code></pre>
+
     </div>
   </div>
 </body>
 <script src="js/windows-ui.min.js"></script>
 <script src="./js/navbarItems.js"></script>
 <script>init_navbar_ul("NavBar", "subdir")</script>
-<script src="js/highlight.min.js"></script>
-<script>hljs.highlightAll()</script>
-<script>document.getElementById("code_view_1").innerHTML =
-hljs.highlightAuto(`
-<aside class="app-navbar-wrap" id="NavBarMain">
-  <div class="app-navbar-header-mobile">
-    <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
-    <div>
-      <span class="app-navbar-name">Windows UI</span>
-    </div>
-  </div>
-  <nav class="app-navbar">
-    <div class="app-navbar-header">
-      <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
-      <span class="app-navbar-name">Windows UI</span>
-    </div>
-    <ul class="app-navbar-list">
-      <label class="app-navbar-theme-switch">
-        <input id="app-navbar-theme-switch" type="checkbox" checked>
-        <div class="app-navbar-theme-switch-icon"></div>
-      </label>
-      <li class="app-navbar-list-item">
-        <a href="./page1.html" class="active">
-          <i class="icons10-sun"></i>
-          <span>Page 1</span>
-        </a>
-      </li>
-      <!-- .... -->
-    </ul>
-  </nav>
-</aside>
-`).value;</script>
 
 </html>
