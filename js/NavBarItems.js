@@ -1,23 +1,23 @@
 const navbar_items = [
   {
     "title": "系统镜像",
-    "href": "appearance.html",
-    "icon": "<i class='icons10-sun'></i>"
+    "href": "mirrors.html",
+    "icon": "<i class='icons10-groove'></i>"
   },
   {
     "title": "装机工具",
-    "href": "classes.html",
-    "icon": "<i class='icons10-puzzle'></i>"
+    "href": "tools.html",
+    "icon": "<i class='icons10-services'></i>"
   },
   {
     "title": "重装教程",
-    "href": "colors.html",
-    "icon": "<i class='icons10-color-palette'></i>"
+    "href": "guide.html",
+    "icon": "<i class='icons10-idea'></i>"
   },
   {
     "title": "系统激活",
-    "href": "icons.html",
-    "icon": "<i class='icons10-deathly-hallows'></i>"
+    "href": "activate.html",
+    "icon": "<i class='icons10-fingerprint'></i>"
   },
 ];
 
